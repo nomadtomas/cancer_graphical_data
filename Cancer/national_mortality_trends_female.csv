@@ -1,0 +1,23 @@
+cancer_type,number,type
+Uterus,2.1*,Female
+Liver and Intrahepatic Bile Duct,1.9*,Female
+Oral Cavity and Pharynx,1.9,Female
+Brain and Other Nervous System,0.5*,Female
+Thyroid,0.3,Female
+Pancreas,0.2*,Female
+Bladder,-0.5*,Female
+Cervix Uteri,-0.7*,Female
+Leukemia,-1.3*,Female
+All Sites,-1.4*,Female
+Kidney and Renal Pelvis,-1.4*,Female
+Breast,-1.5*,Female
+Colon and Rectum,-1.5*,Female
+Esophagus,-1.6*,Female
+Stomach,-1.7*,Female
+Myeloma,-1.7*,Female
+Larynx,-2.3*,Female
+Ovary,-2.3*,Female
+Non-Hodgkin Lymphoma,-2.7*,Female
+Lung and Bronchus,-3.1*,Female
+Melanoma of the Skin,-5.0*,Female
+Hodgkin Lymphoma,-5.2*,Female

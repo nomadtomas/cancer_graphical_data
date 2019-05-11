@@ -1,0 +1,13 @@
+cancer_type,number,type
+Breast,268600,Diagnosed Female
+Lung & Bronchus,111710,Diagnosed Female
+Prostate,0,Diagnosed Female
+Colorectal,67100,Diagnosed Female
+Melanoma of the Skin,39260,Diagnosed Female
+Urinary Bladder,18770,Diagnosed Female
+Non-Hodgkin Lymphoma,33110,Diagnosed Female
+Kidney and Renal Pelvis,29700,Diagnosed Female
+"Corpus & Uterus, NOS",61880,Diagnosed Female
+Leukemia,25860,Diagnosed Female
+Pancreas,26830,Diagnosed Female
+Thyroid,37810,Diagnosed Female

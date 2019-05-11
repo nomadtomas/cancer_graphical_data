@@ -1,0 +1,21 @@
+cancer_type,number,type
+Thyroid,1.9*,Male
+Liver and Intrahepatic Bile Duct,1.4*,Male
+Melanoma of the Skin,1.4*,Male
+Oral Cavity and Pharynx,1.0*,Male
+Testis,0.8*,Male
+Kidney and Renal Pelvis,0.5*,Male
+Pancreas,0.4*,Male
+Myeloma,0.2,Male
+Leukemia,0.0,Male
+Brain and Other Nervous System,-0.4*,Male
+Non-Hodgkin Lymphoma,-0.5*,Male
+Stomach,-1.4*,Male
+Esophagus,-1.4*,Male
+Bladder,-1.5*,Male
+Hodgkin Lymphoma,-1.6*,Male
+Colon and Rectum,-1.6*,Male
+All Sites,-2.0*,Male
+Prostate,-2.7,Male
+Lung and Bronchus,-2.9*,Male
+Larynx,-3.0*,Male

@@ -1,0 +1,13 @@
+cancer_type,number,type
+Breast,2670,Diagnosed Male
+Lung & Bronchus,116440,Diagnosed Male
+Prostate,174650,Diagnosed Male
+Colorectal,78500,Diagnosed Male
+Melanoma of the Skin,57220,Diagnosed Male
+Urinary Bladder,61700,Diagnosed Male
+Non-Hodgkin Lymphoma,41090,Diagnosed Male
+Kidney and Renal Pelvis,44120,Diagnosed Male
+Uterus,0,Diagnosed Male
+Leukemia,35920,Diagnosed Male
+Pancreas,29940,Diagnosed Male
+Thyroid,14260,Diagnosed Male

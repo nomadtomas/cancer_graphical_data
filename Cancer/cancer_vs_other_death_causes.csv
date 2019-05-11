@@ -1,0 +1,11 @@
+cancer_type,number,type
+Heart Disease,635226,Both
+Cancer,598031,Both
+Chronic Lower Respiratory,154592,Both
+Accidents (Unintentional Injury),161346,Both
+Stroke (Cerebrovascular),142134,Both
+Alzheimer's,116103,Both
+Diabetes,80058,Both
+Pneumonia & Influenze,51537,Both
+Nephritis & Nephrosis,50042,Both
+Intentional Self-Harm (Suicide),44962,Both

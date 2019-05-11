@@ -1,0 +1,23 @@
+cancer_type,number,type
+Melanoma of the Skin,1.6*,Female
+Liver and Intrahepatic Bile Duct,1.3,Female
+Uterus,1.2*,Female
+Myeloma,1.1*,Female
+Pancreas,0.7*,Female
+Cervix Uteri,0.5,Female
+Breast,0.3*,Female
+Oral Cavity and Pharynx,0.3*,Female
+Kidney and Renal Pelvis,0.3,Female
+All Sites,0.0,Female
+Thyroid,-0.3,Female
+Non-Hodgkin Lymphoma,-0.4*,Female
+Brain and Other Nervous System,-0.4*,Female
+Stomach,-0.6*,Female
+Leukemia,-0.7,Female
+Bladder,-1.0*,Female
+Colon and Rectum,-1.0*,Female
+Hodgkin Lymphoma,-1.2*,Female
+Lung and Bronchus,-1.5*,Female
+Ovary,-1.6*,Female
+Esophagus,-1.6*,Female
+Larynx,-2.3*,Female
