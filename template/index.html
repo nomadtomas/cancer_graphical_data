@@ -1,33 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Doctype html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Leaflet CSS & JS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
-    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
-    crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
-    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
-    crossorigin=""></script>
-     <!-- D3 script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
-    <title>Cancer InfoGraphics</title>
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>project2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel=stylesheet type="text/css" href="style.css">
 </head>
 <body>
+  <header>
+        <video loop muted autoplay playsinline poster="https://media.giphy.com/media/26Ff43GwoaAks9XgY/giphy.gif">
+            <source src="https://multicdn.synq.fm/blog/videos/background.mp4" type="video/mp4" />
+        </video>
+        <div class="banner">
+            <div class="banner-text">
+               <hr>
+               <h1> Cancer - A Enigma!</h1>
+               <hr>
+                <h3 style="font-weight: 300">Cancer is the second most common cause of death in the U.S. It accounts for nearly 
+               1 in 4 deaths (Heart disease is number one) . The most common cancers among men are: 
+               prostate, lung, and colorectal (colon) cancer. For women it’s: breast, lung, and colorectal cancer.
+               Anyone can develop cancer, however, the risk of getting it increases with age. Most cases occur in
+                middle-aged adults or older. About 77% of all cancers are diagnosed in people 55-years or older.</h3>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Read More.....</a></p>
+            </div>
+        </div>
 
-    <!-- The div where we will inject our map -->
-    <div id="map"></div>
-    <!-- Our JS -->
-    <script type="text/javascript" src="logic.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </header>
+    <div class="row" class ="next-row"><p></p></div>
+
+
+
+    <footer>
+        <div>
+            &copy; Copyright Cool-Kids
+        </div>
+    </footer>
+<script src="app.js"></script>
+<script src="style.css"></script>
+        
 </body>
 </html>
