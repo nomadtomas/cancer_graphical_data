@@ -2,7 +2,7 @@ Project Name: [Cancer Facts]
 
 https://github.com/nomadtomas/cancer_graphical_data
 
-https://cancerfacts.herokuapp.com/
+https://cancerfacts.cancer_graphical_data.com/
 
 Team Members:
 Tomas Resendiz
