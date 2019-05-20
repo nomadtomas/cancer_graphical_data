@@ -7,7 +7,7 @@ https://github.com/nomadtomas/cancer_graphical_data
 
 https://nomadtomas-cancer_graphical_data.herokuapp.com/
 
-Team Members: Tomas Resendiz, Karuna Raina, Sharon Combs Darst, Sai Kondrakunta, Andry Dominguez, 
+Team Members: Tomas Resendiz, Karuna Raina, Sharon Combs Darst, Sai Kondrakunta, Andry Dominguez 
 
 
 Proposal:
