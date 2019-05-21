@@ -7,9 +7,13 @@ body{
     background-color: whitesmoke;
 }
 
+#maptext{
+    color: rgba(82, 45, 45, 0.856);
+}
+
 /* Global */
 .container{
-    width: 90%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -20,6 +24,10 @@ header{
     padding-top: 10px; 
     min-height: 20px;
     border-bottom: #4b8683c9 2px solid;
+}
+
+.link{
+    color: #ffffff;
 }
 
 header #branding{
@@ -36,12 +44,42 @@ header #branding h1{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-bottom: #4b8683c9 2px solid;
 }
 
-#map{
-  height: 80%;
+#showcase3{
+    min-height: 280px;
+    background: url("../../image/doctors.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: #4b8683c9 2px solid;
+}
+#showcase4{
+    min-height: 280px;
+    background: url("../../image/scopeandgraphs.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: #4b8683c9 2px solid;
+}
+
+#showcase p{
+    color: rgb(168, 118, 118);
+    padding-top: 60px;
+    padding-left: 60px;
+}
+#mapid{
+    padding-top: 10px;
+    padding-right: 0;
 }
 
 #navbar-row{
     background: whitesmoke;
+}
+
+#footer{
+    background: rgba(167, 112, 9, 0.815);
+    position: relative;
+    text-align: center;
 }
