@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- added for the accordian -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+</head>
+<body>
+  
+        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+		<!-- Accordion card -->
+		<div class="card">
+	  
+		  <!-- Card header -->
+		  <div class="card-header" role="tab" id="headingOne1">
+			<a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="false"
+			  aria-controls="collapseOne1">
+			  <h5 class="mb-0">
+				Cancer Stats 2019 (New Cases & Deaths) <i class="fas fa-angle-down rotate-icon"></i>
+			  </h5>
+			</a>
+		  </div>
+	  
+		  <!-- Card body -->
+		  <div id="collapseOne1" class="collapse hide" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
+			<div class="card-body">
+					<div class="row" class ="pie-row"><p></p></div>
+
+					<div class ="container">
+						<div class="row">
+							<div class="col-md-6">
+								<h4 class= "text-center">Cancer Cases, 2019</h4>
+								<div class="align-items-left" id="pie"></div>
+							</div>
+							<div class="col-md-6">
+								<h4 class= "text-center">Cancer Deaths, 2019</h4>
+								<div class="align-items-left" id="pie2"></div>
+							</div>
+						</div>
+					</div>
+			</div>
+		  </div>
+	  
+        </div>
+        <div class="card">
+
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingTwo2">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                    aria-expanded="false" aria-controls="collapseTwo2">
+                    <h5 class="mb-0">
+                      Cancer Survival Rate  <i class="fas fa-angle-down rotate-icon"></i>
+                    </h5>
+                  </a>
+                </div>
+            
+                <!-- Card body -->
+                <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+                  <div class="card-body">
+                   
+                   <div class ="container">
+                            <div class="row" id ="scatter">
+                                <div class="col-md-8">
+                                    <h4 class= "text-center">Cancer  Survival Rate</h4>
+                                    <div class="align-items-left" id="Scatter"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                  </div>
+                </div>
+            
+              </div>
+            </div> <!--accordian wrapper-->
+  
+
+     
+
+            <footer>
+                <div>
+                    &copy; Copyright Cool-Kids
+                </div>
+            </footer>
+            </div>	
+
+    <script src="app.js"></script>
+    <script src = "app2.js"></script>
+	<script src="style.css"></script>
+</body>
+</html>
