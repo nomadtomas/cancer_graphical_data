@@ -55,9 +55,19 @@ header #branding h1{
     background-repeat: no-repeat;
     border-bottom: #4b8683c9 2px solid;
 }
+
 #showcase4{
     min-height: 280px;
     background: url("../../image/scopeandgraphs.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: #4b8683c9 2px solid;
+}
+
+#showcase5{
+    min-height: 280px;
+    background: url("../../image/cancercell.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -82,4 +92,8 @@ header #branding h1{
     background: rgba(167, 112, 9, 0.815);
     position: relative;
     text-align: center;
+}
+.tableauPlaceholder{
+    min-height: 660px;
+    min-width: 940px;
 }
