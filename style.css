@@ -1,0 +1,134 @@
+
+/* 	
+body 
+{ background: #959ba5; } */
+
+header {
+ position: relative;
+ height: 600px;
+ min-height: 600px;
+ width: 100%;
+ background-size: cover !important;
+ -webkit-background-size: cover !important;
+ text-align: center;
+ overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -100;
+  min-width: 100%;
+	min-height: 100%;
+
+  width: auto;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+header:before {
+ content: '';
+ display: inline-block;
+ vertical-align: middle;
+ height: 100%;
+}
+
+header .banner {
+ display: inline-block;
+ vertical-align: center;
+ margin: 0 auto;
+ width: 85%;
+ padding-bottom: 30px;
+ padding-top:50px;
+ text-align: center;
+ font:35px 'opensans-bold', sans-serif;
+ font-weight: bold;
+}
+
+header .banner-text {
+ color: #f5f5f5;
+ width: 100%;
+}
+
+header .btn{
+	margin-top:100px;
+	color:white;
+}
+
+.next-row {
+ background: #959ba5;
+ padding-top: 96px;
+	padding-bottom: 66px;
+ overflow: hidden;
+ /* color:#fff; 
+ text-align: center; */
+}
+
+#pie, #pie2 {
+	margin-bottom:30px;
+	margin-right:5px;
+	margin-left:5px
+}
+
+.arc text {
+	font-size: 18px;
+	text-anchor: middle;
+	font-weight:bold;
+	fill:#ffffff;
+}
+
+.arc path {
+	stroke: #fff;
+}
+.card{
+	border:none
+}
+.tooltip {
+		background: #eee;
+		box-shadow: 0 0 5px #999999;
+		color: #333;
+		font-size: 12px;
+		left: 130px;
+		padding: 10px;
+		position: absolute;
+		text-align: center;
+		top: 95px;
+		width: 190px;
+		z-index: 10;
+		display: block;
+		opacity: 0;
+		height:85px
+}
+.d3-tip {
+	padding: 6px;
+	font-size: 12px;
+	line-height: 1;
+	line-height: 1.5em;
+	color: #fff;
+	text-align: center;
+	text-transform: capitalize;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 4px;
+  }
+
+.atext{
+	fill:blue;
+}
+
+footer {
+ position: relative;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ padding: 1rem;
+ background-color:lightblue;
+ text-align: center;
+ color:#fff;
+ text-align: center;
+}
+
+
+  
