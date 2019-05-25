@@ -1,85 +1,85 @@
 index,female_death_num,female_new_num,female_pct_deaths,male_death_num,male_new_num,male_pct_deaths,race,type,type_name
-0,2.1,8.7,24.13793103,7.6,35.2,21.59090909,All Races,urinb.html,bladder
-1,2.2,9.5,23.15789474,8,38.5,20.77922078,White,urinb.html,bladder
-2,2.4,6.6,36.36363636,5.4,19.7,27.41116751,Black,urinb.html,bladder
-3,0.9,3.8,23.68421053,2.9,15.5,18.70967742,Asian/Pacific Islander,urinb.html,bladder
-4,1.4,4.5,31.11111111,3.9,14.9,26.17449664,American Indian/Alaska Native,urinb.html,bladder
-5,1.2,5.1,23.52941176,3.8,19.5,19.48717949,Hispanic,urinb.html,bladder
-6,2.2,9.2,23.91304348,7.9,37.1,21.29380054,Non-Hispanic,urinb.html,bladder
-0,20.6,127.5,16.15686275,,,,All Races,breast.html,breast
-1,20.1,130.5,15.40229885,,,,White,breast.html,breast
-2,28.1,124,22.66129032,,,,Black,breast.html,breast
-3,11.2,100.1,11.18881119,,,,Asian/Pacific Islander,breast.html,breast
-4,14.3,79.5,17.98742138,,,,American Indian/Alaska Native,breast.html,breast
-5,14.2,97.2,14.6090535,,,,Hispanic,breast.html,breast
-6,21.2,132.6,15.98793363,,,,Non-Hispanic,breast.html,breast
-0,11.9,33.9,35.10324484,16.9,44.2,38.23529412,All Races,colorect.html,coloretal
-1,11.7,33.6,34.82142857,16.5,43.4,38.01843318,White,colorect.html,coloretal
-2,15.5,39.1,39.64194373,23.8,52.4,45.41984733,Black,colorect.html,coloretal
-3,8.4,26.9,31.2267658,11.6,37.9,30.60686016,Asian/Pacific Islander,colorect.html,coloretal
-4,13,37.9,34.30079156,19.1,41.2,46.3592233,American Indian/Alaska Native,colorect.html,coloretal
-5,8.8,28.8,30.55555556,14.4,40,36,Hispanic,colorect.html,coloretal
-6,12.3,34.7,35.44668588,17.2,45,38.22222222,Non-Hispanic,colorect.html,coloretal
-0,2.3,10.9,21.10091743,5.5,22.1,24.88687783,All Races,kidrp.html,kidney
-1,2.4,11.3,21.23893805,5.7,22.8,25,White,kidrp.html,kidney
-2,2.3,12.1,19.00826446,5.5,24.3,22.63374486,Black,kidrp.html,kidney
-3,1.1,5.5,20,2.7,12,22.5,Asian/Pacific Islander,kidrp.html,kidney
-4,3.8,13.1,29.00763359,8.1,21.2,38.20754717,American Indian/Alaska Native,kidrp.html,kidney
-5,2.3,11.6,19.82758621,5,20.8,24.03846154,Hispanic,kidrp.html,kidney
-6,2.4,10.8,22.22222222,5.6,22.4,25,Non-Hispanic,kidrp.html,kidney
-0,4.9,10.9,44.95412844,8.8,18.1,48.61878453,All Races,leuks.html,leukemia
-1,5.1,11.5,44.34782609,9.1,19.1,47.64397906,White,leuks.html,leukemia
-2,4.4,8.9,49.43820225,7.2,13.9,51.79856115,Black,leuks.html,leukemia
-3,2.8,6.3,44.44444444,4.7,9.7,48.45360825,Asian/Pacific Islander,leuks.html,leukemia
-4,3,6.6,45.45454545,5.4,11,49.09090909,American Indian/Alaska Native,leuks.html,leukemia
-5,3.8,9.1,41.75824176,6,13,46.15384615,Hispanic,leuks.html,leukemia
-6,4.9,11,44.54545455,8.9,18.6,47.84946237,Non-Hispanic,leuks.html,leukemia
-0,34.4,48.9,70.34764826,51.6,63,81.9047619,All Races,lungb.html,lung
-1,35.6,51.8,68.72586873,51.7,63.5,81.41732283,White,lungb.html,lung
-2,32.4,44.6,72.64573991,62.1,73.5,84.48979592,Black,lungb.html,lung
-3,17.3,28.2,61.34751773,30.2,46.3,65.22678186,Asian/Pacific Islander,lungb.html,lung
-4,29.4,33.9,86.72566372,42,43.3,96.99769053,American Indian/Alaska Native,lungb.html,lung
-5,13.1,24.8,52.82258065,25.3,35.2,71.875,Hispanic,lungb.html,lung
-6,36.5,52.2,69.92337165,54.1,66.6,81.23123123,Non-Hispanic,lungb.html,lung
-0,1.5,17.5,8.571428571,3.7,28.8,12.84722222,All Races,melan.html,melanoma
-1,1.8,21.3,8.450704225,4.3,33.9,12.68436578,White,melan.html,melanoma
-2,0.3,0.9,33.33333333,0.4,1.1,36.36363636,Black,melan.html,melanoma
-3,0.3,1.2,25,0.4,1.6,25,Asian/Pacific Islander,melan.html,melanoma
-4,0.5,5.3,9.433962264,1,5.8,17.24137931,American Indian/Alaska Native,melan.html,melanoma
-5,0.5,4.7,10.63829787,0.9,5,18,Hispanic,melan.html,melanoma
-6,1.7,20,8.5,4,32.4,12.34567901,Non-Hispanic,melan.html,melanoma
-0,4.4,16.2,27.16049383,7.3,23.9,30.54393305,All Races,nhl.html,nhl
-1,4.5,17,26.47058824,7.6,25,30.4,White,nhl.html,nhl
-2,3.3,12.4,26.61290323,5.2,17.7,29.37853107,Black,nhl.html,nhl
-3,3.1,11,28.18181818,4.9,16.4,29.87804878,Asian/Pacific Islander,nhl.html,nhl
-4,3.3,10.6,31.13207547,5.8,12,48.33333333,American Indian/Alaska Native,nhl.html,nhl
-5,3.8,15.7,24.20382166,6.1,20.7,29.46859903,Hispanic,nhl.html,nhl
-6,4.4,16.3,26.99386503,7.4,24.4,30.32786885,Non-Hispanic,nhl.html,nhl
-0,9.6,11.5,83.47826087,12.6,14.6,86.30136986,All Races,pancreas.html,pancreas
-1,9.4,11.4,82.45614035,12.6,14.8,85.13513514,White,pancreas.html,pancreas
-2,12.2,14,87.14285714,14.8,16.7,88.62275449,Black,pancreas.html,pancreas
-3,7.1,9.1,78.02197802,8.2,10.8,75.92592593,Asian/Pacific Islander,pancreas.html,pancreas
-4,8,8,100,9.9,11.4,86.84210526,American Indian/Alaska Native,pancreas.html,pancreas
-5,7.7,10.7,71.96261682,9.4,12,78.33333333,Hispanic,pancreas.html,pancreas
-6,9.8,11.6,84.48275862,12.9,15,86,Non-Hispanic,pancreas.html,pancreas
-0,,,,19.2,109.5,17.53424658,All Races,prost.html,prostate
-1,,,,18,101.9,17.66437684,White,prost.html,prostate
-2,,,,38.9,176.7,22.0147142,Black,prost.html,prostate
-3,,,,8.6,55.6,15.4676259,Asian/Pacific Islander,prost.html,prostate
-4,,,,19.2,55.4,34.65703971,American Indian/Alaska Native,prost.html,prostate
-5,,,,15.8,93.4,16.91648822,Hispanic,prost.html,prostate
-6,,,,19.5,112,17.41071429,Non-Hispanic,prost.html,prostate
-0,0.5,23.3,2.145922747,0.5,8,6.25,All Races,thyro.html,thyroid
-1,0.5,24.5,2.040816327,0.5,8.6,5.813953488,White,thyro.html,thyroid
-2,0.6,14.3,4.195804196,0.4,4,10,Black,thyro.html,thyroid
-3,0.6,22.6,2.654867257,0.5,7.7,6.493506494,Asian/Pacific Islander,thyro.html,thyroid
-4,0.4,14.2,2.816901408,0.5,4.1,12.19512195,American Indian/Alaska Native,thyro.html,thyroid
-5,0.7,21.9,3.196347032,0.6,5.7,10.52631579,Hispanic,thyro.html,thyroid
-6,0.5,23.7,2.109704641,0.5,8.6,5.813953488,Non-Hispanic,thyro.html,thyroid
-0,4.7,27.5,17.09090909,,,,All Races,corp.html,uterus
-1,4.4,28.1,15.65836299,,,,White,corp.html,uterus
-2,8.5,27.4,31.02189781,,,,Black,corp.html,uterus
-3,3.1,20.8,14.90384615,,,,Asian/Pacific Islander,corp.html,uterus
-4,3.5,19.7,17.76649746,,,,American Indian/Alaska Native,corp.html,uterus
-5,3.9,24.1,16.18257261,,,,Hispanic,corp.html,uterus
-6,4.8,27.9,17.20430108,,,,Non-Hispanic,corp.html,uterus
+0,2.1,8.7,24.1,7.6,35.2,21.6,All Races,urinb.html,bladder
+1,2.2,9.5,23.2,8.0,38.5,20.8,White,urinb.html,bladder
+2,2.4,6.6,36.4,5.4,19.7,27.4,Black,urinb.html,bladder
+3,0.9,3.8,23.7,2.9,15.5,18.7,Asian/Pacific Islander,urinb.html,bladder
+4,1.4,4.5,31.1,3.9,14.9,26.2,American Indian/Alaska Native,urinb.html,bladder
+5,1.2,5.1,23.5,3.8,19.5,19.5,Hispanic,urinb.html,bladder
+6,2.2,9.2,23.9,7.9,37.1,21.3,Non-Hispanic,urinb.html,bladder
+0,20.6,127.5,16.2,0.0,0.0,0.0,All Races,breast.html,breast
+1,20.1,130.5,15.4,0.0,0.0,0.0,White,breast.html,breast
+2,28.1,124,22.7,0.0,0.0,0.0,Black,breast.html,breast
+3,11.2,100.1,11.2,0.0,0.0,0.0,Asian/Pacific Islander,breast.html,breast
+4,14.3,79.5,18.0,0.0,0.0,0.0,American Indian/Alaska Native,breast.html,breast
+5,14.2,97.2,14.6,0.0,0.0,0.0,Hispanic,breast.html,breast
+6,21.2,132.6,16.0,0.0,0.0,0.0,Non-Hispanic,breast.html,breast
+0,11.9,33.9,35.1,16.9,44.2,38.2,All Races,colorect.html,coloretal
+1,11.7,33.6,34.8,16.5,43.4,38.0,White,colorect.html,coloretal
+2,15.5,39.1,39.6,23.8,52.4,45.4,Black,colorect.html,coloretal
+3,8.4,26.9,31.2,11.6,37.9,30.6,Asian/Pacific Islander,colorect.html,coloretal
+4,13,37.9,34.3,19.1,41.2,46.4,American Indian/Alaska Native,colorect.html,coloretal
+5,8.8,28.8,30.6,14.4,40.0,36.0,Hispanic,colorect.html,coloretal
+6,12.3,34.7,35.4,17.2,45.0,38.2,Non-Hispanic,colorect.html,coloretal
+0,2.3,10.9,21.1,5.5,22.1,24.9,All Races,kidrp.html,kidney
+1,2.4,11.3,21.2,5.7,22.8,25.0,White,kidrp.html,kidney
+2,2.3,12.1,19.0,5.5,24.3,22.6,Black,kidrp.html,kidney
+3,1.1,5.5,20.0,2.7,12.0,22.5,Asian/Pacific Islander,kidrp.html,kidney
+4,3.8,13.1,29.0,8.1,21.2,38.2,American Indian/Alaska Native,kidrp.html,kidney
+5,2.3,11.6,19.8,5.0,20.8,24.0,Hispanic,kidrp.html,kidney
+6,2.4,10.8,22.2,5.6,22.4,25.0,Non-Hispanic,kidrp.html,kidney
+0,4.9,10.9,45.0,8.8,18.1,48.6,All Races,leuks.html,leukemia
+1,5.1,11.5,44.3,9.1,19.1,47.6,White,leuks.html,leukemia
+2,4.4,8.9,49.4,7.2,13.9,51.8,Black,leuks.html,leukemia
+3,2.8,6.3,44.4,4.7,9.7,48.5,Asian/Pacific Islander,leuks.html,leukemia
+4,3,6.6,45.5,5.4,11.0,49.1,American Indian/Alaska Native,leuks.html,leukemia
+5,3.8,9.1,41.8,6.0,13.0,46.2,Hispanic,leuks.html,leukemia
+6,4.9,11,44.5,8.9,18.6,47.8,Non-Hispanic,leuks.html,leukemia
+0,34.4,48.9,70.3,51.6,63.0,81.9,All Races,lungb.html,lung
+1,35.6,51.8,68.7,51.7,63.5,81.4,White,lungb.html,lung
+2,32.4,44.6,72.6,62.1,73.5,84.5,Black,lungb.html,lung
+3,17.3,28.2,61.3,30.2,46.3,65.2,Asian/Pacific Islander,lungb.html,lung
+4,29.4,33.9,86.7,42.0,43.3,97.0,American Indian/Alaska Native,lungb.html,lung
+5,13.1,24.8,52.8,25.3,35.2,71.9,Hispanic,lungb.html,lung
+6,36.5,52.2,69.9,54.1,66.6,81.2,Non-Hispanic,lungb.html,lung
+0,1.5,17.5,8.6,3.7,28.8,12.8,All Races,melan.html,melanoma
+1,1.8,21.3,8.5,4.3,33.9,12.7,White,melan.html,melanoma
+2,0.3,0.9,33.3,0.4,1.1,36.4,Black,melan.html,melanoma
+3,0.3,1.2,25.0,0.4,1.6,25.0,Asian/Pacific Islander,melan.html,melanoma
+4,0.5,5.3,9.4,1.0,5.8,17.2,American Indian/Alaska Native,melan.html,melanoma
+5,0.5,4.7,10.6,0.9,5.0,18.0,Hispanic,melan.html,melanoma
+6,1.7,20,8.5,4.0,32.4,12.3,Non-Hispanic,melan.html,melanoma
+0,4.4,16.2,27.2,7.3,23.9,30.5,All Races,nhl.html,nhl
+1,4.5,17,26.5,7.6,25.0,30.4,White,nhl.html,nhl
+2,3.3,12.4,26.6,5.2,17.7,29.4,Black,nhl.html,nhl
+3,3.1,11,28.2,4.9,16.4,29.9,Asian/Pacific Islander,nhl.html,nhl
+4,3.3,10.6,31.1,5.8,12.0,48.3,American Indian/Alaska Native,nhl.html,nhl
+5,3.8,15.7,24.2,6.1,20.7,29.5,Hispanic,nhl.html,nhl
+6,4.4,16.3,27.0,7.4,24.4,30.3,Non-Hispanic,nhl.html,nhl
+0,9.6,11.5,83.5,12.6,14.6,86.3,All Races,pancreas.html,pancreas
+1,9.4,11.4,82.5,12.6,14.8,85.1,White,pancreas.html,pancreas
+2,12.2,14,87.1,14.8,16.7,88.6,Black,pancreas.html,pancreas
+3,7.1,9.1,78.0,8.2,10.8,75.9,Asian/Pacific Islander,pancreas.html,pancreas
+4,8,8,100.0,9.9,11.4,86.8,American Indian/Alaska Native,pancreas.html,pancreas
+5,7.7,10.7,72.0,9.4,12.0,78.3,Hispanic,pancreas.html,pancreas
+6,9.8,11.6,84.5,12.9,15.0,86.0,Non-Hispanic,pancreas.html,pancreas
+0,0,0,0.0,19.2,109.5,17.5,All Races,prost.html,prostate
+1,0,0,0.0,18.0,101.9,17.7,White,prost.html,prostate
+2,0,0,0.0,38.9,176.7,22.0,Black,prost.html,prostate
+3,0,0,0.0,8.6,55.6,15.5,Asian/Pacific Islander,prost.html,prostate
+4,0,0,0.0,19.2,55.4,34.7,American Indian/Alaska Native,prost.html,prostate
+5,0,0,0.0,15.8,93.4,16.9,Hispanic,prost.html,prostate
+6,0,0,0.0,19.5,112.0,17.4,Non-Hispanic,prost.html,prostate
+0,0.5,23.3,2.1,0.5,8.0,6.3,All Races,thyro.html,thyroid
+1,0.5,24.5,2.0,0.5,8.6,5.8,White,thyro.html,thyroid
+2,0.6,14.3,4.2,0.4,4.0,10.0,Black,thyro.html,thyroid
+3,0.6,22.6,2.7,0.5,7.7,6.5,Asian/Pacific Islander,thyro.html,thyroid
+4,0.4,14.2,2.8,0.5,4.1,12.2,American Indian/Alaska Native,thyro.html,thyroid
+5,0.7,21.9,3.2,0.6,5.7,10.5,Hispanic,thyro.html,thyroid
+6,0.5,23.7,2.1,0.5,8.6,5.8,Non-Hispanic,thyro.html,thyroid
+0,4.7,27.5,17.1,0.0,0.0,0.0,All Races,corp.html,uterus
+1,4.4,28.1,15.7,0.0,0.0,0.0,White,corp.html,uterus
+2,8.5,27.4,31.0,0.0,0.0,0.0,Black,corp.html,uterus
+3,3.1,20.8,14.9,0.0,0.0,0.0,Asian/Pacific Islander,corp.html,uterus
+4,3.5,19.7,17.8,0.0,0.0,0.0,American Indian/Alaska Native,corp.html,uterus
+5,3.9,24.1,16.2,0.0,0.0,0.0,Hispanic,corp.html,uterus
+6,4.8,27.9,17.2,0.0,0.0,0.0,Non-Hispanic,corp.html,uterus

@@ -1,180 +1,144 @@
-function buildMetadata(sample) {
+// margin
+let pieAcord = d3.select("#headingOne1")
 
-    // @TODO: Complete the following function that builds the metadata panel
+pieAcord.on("click", function(){
+  pieFunction("../new_cancer.csv","#pie") 
+  pieFunction("../cancer_deaths.csv","#pie2")
+})
+
+
+async function pieFunction(fileName,divName) {
+
+
+var margin = {top: 20, right: 20, bottom: 20, left: 20},
+    width =600 - margin.right - margin.left,
+    height = 400 - margin.top - margin.bottom,
+    radius = Math.min(width, height) / 2;
+
+// color range
+var color = d3.scaleOrdinal()
+            .range(["#003f5c", "#444e86", "#955196", "#dd5182", "#2196F3", "#ff6e54", "#ffa600"])
+
+// pie chart arc. Need to create arcs before generating pie
+var arc = d3.arc()
+    .outerRadius(radius - 10)
+    .innerRadius(0);
+
+
+// arc for the labels position
+var labelArc = d3.arc()
+    .outerRadius(radius - 80)
+    .innerRadius(radius - 20);
+
+// generate pie chart and donut chart
+var pie = d3.pie()
+    .sort(null)
+    .value(function(d) { return d.number; });
+
+// define the svg for pie chart had to increase by 100 to make room for the legends
+var svg = d3.select(divName).append("svg")
+    .attr("width", width + 100)
+    .attr("height", height)
+   .append("g")
+    .attr("transform", "translate(" + (width-90) / 2 + "," + height / 2 + ")");
+
+
+// import data 
+const data = await d3.csv(fileName)
   
-    // Use `d3.json` to fetch the metadata for a sample
-    d3.json(`/metadata/${sample}`).then(function(sampleData) {
-      console.log(sampleData)
-      // Use d3 to select the panel with id of `#sample-metadata`
-      var sample_metadata = d3.select("#sample-metadata");
   
-      // Use `.html("") to clear any existing metadata
-      sample_metadata.html("");
-      // Use `Object.entries` to add each key and value pair to the panel
-      // Hint: Inside the loop, you will need to use d3 to append new
-      // tags for each key-value in the metadata.
-      Object.entries(sampleData).forEach(([key, value]) => {
-        sample_metadata.append("h5").text(`BB_${key}: ${value}`);
+    // parse data
+    var legendText=[]
+    
+    data.forEach(function(d) {
+        legendText.push(d.number)
+        d.number = parseFloat(d.number.replace(/,/g, ''))
+        txt = d.percent
+        init = txt.indexOf('(');
+        fin = txt.indexOf(')');
+        new_val = txt.substr(init+1,fin-init-1)
+       d.percent = new_val
+        
+        d.cancer_type= d.cancer_type;
     })
-  }
-  )}
-  // BONUS: Build the Gauge Chart
-  // buildGauge(data.WFREQ);
+    
+  // "g element is a container used to group other SVG elements"
+  var g = svg.selectAll(".arc")
+            .data(pie(data))
+            .enter().append("g")
+            .attr("class", "arc");
+
+  // append path 
+      g.append("path")
+          .attr("d", arc)
+          .style("fill", function(d) { return color(d.data.cancer_type); })
+        // transition 
+        .transition()
+          .ease(d3.easeLinear)
+          .duration(3000)
+          .attrTween("d", tweenPie);
+        
+  // append text
+ g.append("text")
+    .transition()
+    .ease(d3.easeLinear)
+    .duration(3000)
+    .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
+    .attr("dy", ".35em")
+    .attr("fill","white")
+    .text(function(d) { return d.data.percent });
+
+// Helper function for animation of pie chart and donut chart
+function tweenPie(b) {
+  b.innerRadius = 0;
+  var i = d3.interpolate({startAngle: 0, endAngle: 0}, b);
+  return function(t) { return arc(i(t)); };
+}
+
+var legend = svg.selectAll('.legend-entry').data(data)
+  .enter().append('g')
   
-  function buildGauge(data) {
-    // Enter a speed between 0 and 180
-    d3.json(`/metadata/${data}`).then(function(data){
-    console.log('data.!', data)
-    let degree = parseInt(data.WFREQ) * (180/10);
-  
-    let level = degree;
-  
-    // Trig to calc meter point
-    let degrees = 180 - level,
-         radius = .5;
-    let radians = degrees * Math.PI / 180;
-    let x = radius * Math.cos(radians);
-    let y = radius * Math.sin(radians);
-  
-    // Path: may have to change to create a better triangle
-    let mainPath = 'M -.0 -0.025 L .0 0.025 L ',
-         pathX = String(x),
-         space = ' ',
-         pathY = String(y),
-         pathEnd = ' Z';
-    let path = mainPath.concat(pathX,space,pathY,pathEnd);
-  
-    let trace = [{ type: 'scatter',
-       x: [0], y:[0],
-        marker: {size: 28, color:'850000'},
-        showlegend: false,
-        name: 'WASH FREQ',
-        text: data.WFREQ,
-        hoverinfo: 'text+name'},
-      { values: [1, 1, 1, 1, 1, 1, 1, 1, 1, 9],
-      rotation: 90,
-      text: ['8-9', '7-8', '6-7', '5-6', '4-5', '3-4', '2-3', '1-2', '0-1',''],
-      textinfo: 'text',
-      textposition:'inside',
-      textfont:{
-        size : 16,
-        },
-      marker: {colors:['rgba(6, 51, 0, .5)', 'rgba(9, 77, 0, .5)', 
-                             'rgba(12, 102, 0 ,.5)', 'rgba(14, 127, 0, .5)',
-                             'rgba(110, 154, 22, .5)','rgba(170, 202, 42, .5)', 
-                             'rgba(202, 209, 95, .5)','rgba(210, 206, 145, .5)', 
-                             'rgba(232, 226, 202, .5)','rgba(255, 255, 255, 0)'
-                      ]},
-      labels: ['8-9', '7-8', '6-7', '5-6', '4-5', '3-4', '2-3', '2-1', '0-1',''],
-      hoverinfo: 'text',
-      hole: .5,
-      type: 'pie',
-      showlegend: false
-    }];
-  
-    let layout = {
-      shapes:[{
-          type: 'path',
-          path: path,
-          fillcolor: '850000',
-          line: {
-            color: '850000'
-          }
-        }],
-  
-      title: '<b> Belly Button Washing Frequency</b> <br> Scrub Per Week',
-      xaxis: {zeroline:false, showticklabels:false,
-                 showgrid: false, range: [-1, 1]},
-      yaxis: {zeroline:false, showticklabels:false,
-                 showgrid: false, range: [-1, 1]},
-      plot_bgcolor: 'rgba(0, 0, 0, 0)',
-      paper_bgcolor: 'rgba(0, 0, 0, 0)',
-    };
-  
-    Plotly.newPlot('gauge', trace, layout, {responsive: true});
-  }
-    )}
-  function buildCharts(sample) {
-  
-    // @TODO: Use `d3.json` to fetch the sample data for the plots
-    d3.json(`/samples/${sample}`).then(function(sampleData) {
-    console.log(sampleData)
-      // @TODO: Build a Bubble Chart using the sample data
-      const 
-        otu_ids = sampleData.otu_ids,
-        otu_labels = sampleData.otu_labels,
-        sample_values = sampleData.sample_values;
-     
-      const trace1 = {
-        x: otu_ids,
-        y: sample_values,
-        text: otu_labels,
-        mode: 'markers',
-        marker: {
-          color: otu_ids,
-          colorscale: 'Earth',
-          size: sample_values
-        }
-      }
-  
-      const bubbleData = [trace1];
-  
-      const bubbleLayout = {
-        margin: {t: 0},
-        hovermode: 'closest',
-        xaxis: { title: "OTU ID" }  
-      }
-  
-      Plotly.newPlot('bubble', bubbleData, bubbleLayout, {responsive: true});
-  
-      // @TODO: Build a Pie Chart
-      // HINT: You will need to use slice() to grab the top 10 sample_values,
-      // otu_ids, and labels (10 each).
-      const pieData = [{
-        values: sample_values.slice(0,10),
-        labels: otu_ids.slice(0,10),
-        hovertext: otu_ids.slice(0,10),
-        hoverinfo: 'hovertext',
-        type: 'pie'
-      }]
-  
-      const pieLayout = {
-        margin: {t: 0, l: 0}
-      }
-      
-      Plotly.newPlot('pie', pieData, pieLayout, {responsive: true})
-  
-      })
-  }
-  
-  function init() {
-    // Grab a reference to the dropdown select element
-    var selector = d3.select("#selDataset");
-  
-    // Use the list of sample names to populate the select options
-    d3.json("/names").then((sampleNames) => {
-      sampleNames.forEach((sample) => {
-        selector
-          .append("option")
-          .text(sample)
-          .property("value", sample);
-      });
-  
-      // Use the first sample from the list to build the initial plots
-      const firstSample = sampleNames[0];
-      buildCharts(firstSample);
-      buildMetadata(firstSample);
-      buildGauge(firstSample);
+ .attr('class', 'legend-entry')
+
+legend.append('rect')
+    .data(data)
+  .attr('class', 'legend-rect')
+  .attr('x', 175)
+  .attr('y', function (d, i) { return i * 30})
+  .attr('width', 20)
+  .attr('height', 20)
+  .attr('fill', function (d) {
+    return color(d.cancer_type)
+   })
+   
+
+legend.append('text')
+  .attr('class', 'legend-text')
+  .attr('x', 200)
+  .attr('y', function (d, i) { return ( i * 30) + 15 })
+  .style('fill',"#000a19")
+  .text(function (d,i) {
+    return `${d.cancer_type}: ${legendText[i]}`
+  })
+
+  const toolTip = d3.tip()
+		.attr('class', 'tooltip')
+        .offset([0,+40])
+        .html(function(d,i) {
+            return (`${d.data.cancer_type}<br><hr>Patients :  ${d.data.number}`)
+        })
+    g.call(toolTip)
+   g.on("mouseover", function(d) {
+			toolTip.show(d,this)
+
+		})
+    .on("mouseout", function(d) {
+        toolTip.hide(d,this);
+       
     });
-  }
-  
-  function optionChanged(newSample) {
-    // Fetch new data each time a new sample is selected
-    buildCharts(newSample);
-    buildMetadata(newSample);
-    buildGauge(newSample);
-  }
-  
-  // Initialize the dashboard
-  init();
-  
+
+}
+
+
+
+

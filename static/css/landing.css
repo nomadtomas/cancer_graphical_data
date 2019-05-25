@@ -20,8 +20,9 @@ header {
      left: 50%;
      z-index: -100;
      min-width: 100%;
-       min-height: 100%;
-   
+     min-height: 100%;
+     position: fixed;
+     bottom: 0;
      width: auto;
      height: auto;
      -webkit-transform: translate(-50%, -50%);
@@ -42,15 +43,27 @@ header {
     margin: 0 auto;
     width: 85%;
     padding-bottom: 30px;
-    padding-top:50px;
+    padding-top:10px;
     text-align: center;
     font:35px 'opensans-bold', sans-serif;
     font-weight: bold;
    }
-   
+ /* Add some content at the bottom of the video/page */
+/* .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }   */
+
    header .banner-text {
+    position: relative;
     color: black;
     width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
    }
    
    header .btn{
@@ -103,7 +116,8 @@ header {
    
    
    footer {
-    position: relative;
+    position: fixed;
+    bottom: 0;
     right: 0;
     bottom: 0;
     left: 0;

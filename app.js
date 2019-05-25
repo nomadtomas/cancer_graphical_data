@@ -2,11 +2,13 @@
 let pieAcord = d3.select("#headingOne1")
 
 pieAcord.on("click", function(){
+  
+  d3.event.preventDefault()
+
   pieFunction("new_cancer.csv","#pie") 
   pieFunction("cancer_deaths.csv","#pie2")
 })
-
-
+tbody.html("")
 async function pieFunction(fileName,divName) {
 
 
@@ -45,7 +47,7 @@ var svg = d3.select(divName).append("svg")
 
 // import data 
 const data = await d3.csv(fileName)
-  
+    
   
     // parse data
     var legendText=[]

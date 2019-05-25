@@ -6,11 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/css/style.css">
-   
-    <title>CancerData | Welcome</title>
 
-   <!-- added for the accordian -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <title>CancerData | Demographic Table</title>
+
 </head>
 <body>
     <header>
@@ -20,12 +18,9 @@
             </div> 
         </div>
     </header> <!-- end of header -->
-    <section id="showcase">
+    <section id="showcase4">
         <div class="container"></div>
-            <p>"Cancer affects all of us,<br>whether you're a daughter,<br>
-                mother, sister, friend,<br>coworker, doctor, or <br>patient."<br><br>
-                --Jennifer Aniston
-            </p>         
+                 
     </section>
     
     <div class="container-fluid"> 
@@ -52,8 +47,8 @@
                       <a class="nav-link" href="history.html">Cancer History</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="demographic.html">Demographic Table</a>
-                      </li>
+                      <a class="nav-link" href="demographic.html">Demographic Table</a>
+                    </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Cancers
@@ -77,88 +72,66 @@
             </div>
         </nav>  <!-- end of nav bar -->
         </div>
-    <div class="container-fluid" id="mapid">
-            <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
-        <div class="row" id="maptext">
-            <div class="col-lg-4">
-                <h3>Highlights</h3>
-                <h6>With over 5,000 hospitals nation wide, there is always help near you.</h6>
-               
-                <h3>What is cancer?</h3>
-                 <h6>Cancer is a name given to a collection of related diseases.  The main 
-                     commonality is that some of the body's cells begin to divide without stopping
-                     and spread into surrounding tissues.
-                 </h6>
-                
-                 <h3>How many cancer types exist?</h3>
-                 <h6>Over 120 cancer types have been found, each characterized by abnormal cell
-                     growth.  Nevertheless, many are treatable with a high survival rate.  
-                 </h6>
-            
-                 <h3>What are the deadliest types?</h3>
-                    <ol>
-                        <li>Lung and bronchail cancer</li>
-                        <li>Colon and rectal cancer</li>
-                        <li>Breast cancer</li>
-                        <li>Pancreatic cancer</li>
-                        <li>Prostate cancer</li>
-                        <li>Leukemia</li>
-                        <li>Non-Hodgkin lymphoma</li>
-                        <li>Liver and intrahepatic bile duct cancer</li>
-                        <li>Ovarian cancer</li>
-                        <li>Esophageal cancer</li>
-                    </ol>
-            </div>
-        <div class="col-lg-8">
-        <!-- Accordion card -->
-		<div class="card">
-	  
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingOne1">
-              <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="false"
-                aria-controls="collapseOne1">
-                <h5 class="mb-0">
-                  Cancer Stats 2019 (New Cases & Deaths) <i class="fas fa-angle-down rotate-icon"></i>
-                </h5>
-              </a>
-            </div>
-        
-            <!-- Card body -->
-            <div id="collapseOne1" class="collapse hide" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
-              <div class="card-body">
-                      <div class="row" class ="pie-row"><p></p></div>
-  
-                      <div class ="container">
-                          <div class="row">
-                              <div class="col-md-6">
-                                  <h4 class= "text-center">Cancer Cases, 2019</h4>
-                                  <div class="align-items-left" id="pie"></div>
-                              </div>
-                              <div class="col-md-6">
-                                  <h4 class= "text-center">Cancer Deaths, 2019</h4>
-                                  <div class="align-items-left" id="pie2"></div>
-                              </div>
-                          </div>
-                      </div>
+    <div class="jumbotron">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-2">
+                <aside class="filters">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">Filter Search</div>
+                    <div class="panel-body">
+                      <form>
+                        <div class="form-group">
+                          <ul class="list-group" id="filters">
+                            <ul class="list-group" id="filters">
+                                <li class="filter list-group-item">
+                                  <label for="race">Enter a Race</label>
+                                  <input class="form-control" id="race" type="text" placeholder="All Races">
+                                </li>
+                                <li class="filter list-group-item">
+                                  <label for="cancer">Enter a Cancer Type</label>
+                                  <input class="form-control" id="cancer" type="text" placeholder="Bladder">
+                                </li>
+                          </ul>
+                        </div>
+                        <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
+                      </form>
+                    </div>
+                  </div>
+                </aside>
               </div>
-            </div>
-        
-            </div>
-            </div>
-            </div>
-        </div>
-    </div> <!-- end of map -->
-    </div>
-    </div>
+              <div class="col-md-10">
+                <div id="table-area" class="">
+                  <table id="ufo-table" class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th class="table-head">Female Deaths</th>
+                        <th class="table-head">Female New Cases</th>
+                        <th class="table-head">Male Deaths</th>
+                        <th class="table-head">Male New Cases</th>
+                        <th class="table-head">% Male Deaths</th>
+                        <th class="table-head">% Female Deaths</th>
+                        <th class="table-head">Race</th>
+                        <th class="table-head">Cancer Type</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+              </div>
+            </div><!-- end of row -->
+          </div>    
+
+    </div>    
+    </div> <!-- end of jumbotron -->
     </div> <!-- end of container -->
     <footer id="footer">
             <p>CancerFacts&copy;2019</p>
     </footer>
-    <!-- API key -->
-    <script type="text/javascript" src="../static/js/config.js"></script>
     <!-- Our JS -->
-    <script src="app.js"></script>
-    <script type="text/javascript" src="../static/js/hospitals.js"></script>
+    <script src="../static/js/demo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
